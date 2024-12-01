@@ -1,0 +1,140 @@
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="page.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <!-- Navbar Section -->
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="homepage.html" id="navbar__logo">PANPAN STORE <sub class="sub1"> <small>ㅤSALE•SERVICES•REPAIR</small></sub></a>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span> <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__item">
+          <a href="homepage.html" class="navbar__links" id="home-page">Home</a>
+        </li>
+        <li class="navbar__item">
+          <a href="aboutpage.html" class="navbar__links" id="about-page">About</a>
+        </li>
+        <li class="navbar__item">
+          <a href="categorypage.html" class="navbar__links" id="category-page">Category</a>
+        </li>
+          <li class="navbar__item">
+          <a href="paymentpage.html" class="navbar__links" id="Payment-page">Payment</a>
+        </li>
+        <li class="navbar__btn">
+          <a href="signuppage.html" class="button" id="signup">Sign Up</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="main" id="Payment">
+		 
+    <div class="row">
+			
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+		  <h1>PAYMENT METHOD</h1>
+		  
+		  <h1>-----------------------------------------------------------------------------------------------------</h1>
+
+        <div class="row">
+          <div class="col-50">
+			  
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Hassan Jamil Bin Masdom">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="HassanRempit@gmail.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="No 45 , Taman Mewangi">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="Kedah">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="Alor Setar">
+              </div>
+              <div class="col-50">
+                <label for="zip">Postcode</label>
+                <input type="text" id="zip" name="zip" placeholder="10001">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fab fa-cc-visa" style="color:rgba(176,194,0,1.00);"></i>
+              <i class="fab fa-cc-amex" style="color:rgba(0,219,239,1.00);"></i>
+              <i class="fab fa-cc-mastercard" style="color:rgba(235,181,0,1.00);"></i>
+              <i class="fab fa-cc-discover" style="color:;"></i>
+			         <i class="fab fa-cc-paypal" style="color: blue;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="Abu bin Suud">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2018">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="352">
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+
+		  <div ><button  class="main__btn" type="submit" ><a href="https://www.al-ikhsan.com/checkout/cart/">Continue to checkout</a> </button>
+			  </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="col-25">
+    <div class="container">
+		<h2>Receipt</h2>
+		<h2>-----------------------------</h2>
+        <h4>Cart
+        <span class="price" style="color:black">
+          <i class="fa fa-shopping-cart"></i>
+          <b>4</b>
+        </span>
+      </h4>
+      <p><a href="#">Product 1</a> <span class="price">RM 250</span></p>
+      <p><a href="#">Product 2</a> <span class="price">RM 100</span></p>
+      <p><a href="#">Product 3</a> <span class="price">RM 500</span></p>
+      <p><a href="#">Product 4</a> <span class="price">RM 60</span></p>
+      <hr>
+      <p>Total <span class="price" style="color:black"><b>RM 500</b></span></p>
+    </div>
+  </div>
+</div>
+		  
+      </div>
+    </div>
+
+  </html>

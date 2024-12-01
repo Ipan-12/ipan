@@ -1,0 +1,347 @@
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="page.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      crossorigin="anonymous"
+    />
+
+    <script type="text/javascript">
+
+      function displayPictures() {
+          //Deaclaring variables
+          var tbody, row, imageObject
+          //Get the tbody element
+          tbody = document.getElementById("tbody >tr >td")
+          //For each row
+          for (row of tbody) {
+              //We create an image object 
+              imageObject.onerror = function (e) {
+                  this.src = ["/master_project_ideas/imagetocsv/img/MessageMediaPhoto-ID-48.jpg"]
+              }
+              imageObject.alt = "Not found"
+
+              imageObject = new Image()
+              //We set the image source to the 2nd columns content
+              imageObject.src = row[2].innerText
+              //And finally, we replace the 5th cell's content
+              row[4].innerHTML = ""
+              row[4].appendChild(imageObject)
+          }
+      }
+
+  </script>
+  </head>
+
+  
+  <!-- Navbar Section -->
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="homepage.html" id="navbar__logo">PANPAN STORE <sub class="sub1"> <small>ㅤSALE•SERVICES•REPAIR</small></sub></a>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span> <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__item">
+          <a href="homepage.html" class="navbar__links" id="home-page">Home</a>
+        </li>
+        <li class="navbar__item">
+          <a href="aboutpage.html" class="navbar__links" id="about-page">About</a>
+        </li>
+        <li class="navbar__item">
+          <a href="categorypage.html" class="navbar__links" id="category-page">Category</a>
+        </li>
+          <li class="navbar__item">
+          <a href="paymentpage.html" class="navbar__links" id="Payment-page">Payment</a>
+        </li>
+        <li class="navbar__btn">
+          <a href="signuppage.html" class="button" id="signup">Sign Up</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="category2" id="category2">
+    <h1>CATEGORY</h1>
+    <div class="category2__wrapper">
+      <div class="category2__card">
+        <h2>KEYBOARD</h2>
+        <video src="Razer BlackWidow V4 Pro 75% .mp4" width="300" height="250" alt="" controls></video>
+        
+      </div>
+      <div class="category2__card">
+        <h2>MOUSE</h2>
+        <video src="Razer Cobra Line .mp4" width="300" height="250" alt="" controls></video>
+        
+      </div>
+      <div class="category2__card">
+        <h2>HEADPHONE</h2>
+        <video src="Razer Kraken V4 Pro .mp4" width="300" height="250" alt="" controls></video>
+      </div>
+      <div class="category2__card">
+        <h2>MONITOR</h2>
+        <video src="Razer Raptor .mp4" width="300" height="250" alt="" controls></video>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Promotion Section -->
+<div class="category" id="category">
+    <div class="category__wrapper">
+      <div class="category__card">
+        <h2>KEYBOARD</h2>
+        <img src="keyboard.gif" width="300" height="250" alt=""/>
+          <p>For Indoor and Outdoor</p>
+        <div ><button onclick="document.getElementById('li01').style.display='block'" class="main__btn" ><a href="">SHOP NOW</a> </button>
+          </div>
+      </div>
+      <div class="category__card">
+        <h2>MOUSE</h2>
+        <img src="mouse2.gif" width="300" height="250" alt=""/>
+          <p>For Lifestyles and Fashion</p>
+        <div ><button  onclick="document.getElementById('li02').style.display='block'" class="main__btn" ><a href="">SHOP NOW</a> </button>
+          </div>
+      </div>
+      <div class="category__card">
+        <h2>HEADPHONE</h2>
+        <img src="headphone.gif" width="300" height="248" alt=""/>
+          <p>For Rough Sport at Field</p>
+        <div ><button onclick="document.getElementById('li03').style.display='block'" class="main__btn" ><a href="">SHOP NOW</a> </button>
+            </div>
+          </div>
+      <div class="category__card">
+        <h2>MONITOR</h2>
+        <img src="monitor.webp" width="300" height="250" alt=""/>
+          <p>For Basketball Soft Surface</p>
+        <div ><button onclick="document.getElementById('li04').style.display='block'" class="main__btn" ><a href="">SHOP NOW</a> </button>
+            </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div id="li01" class="modal2">
+    <tspan onclick="document.getElementById('li01').style.display='none'" class="close2" title="Close Modal">times;</span>
+    <table border="6" style="width: 85%;">
+      <thead>
+          <tr style="text-align: center;">
+              <th>No. Item</th>
+              <th class="imageli1" style="width: 50%;"> Image</th>
+              <th id="Image">Detail Item</th>
+              <th>Price Item </th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td>1</td>
+              <td><img src="keyb1.png" alt="" style="width: 80%;"><BR><P>LOGITECH XPR0</P></BR></td>
+              <td><p><b>• Game Mode key:</b> A dedicated key that disables the Windows key when activated</p> <br> 
+                  <p><b>• LIGHTSYNC RGB lighting:</b> The keyboard's lighting can be customized with the Logitech G HUB software</p></a> <br>
+                  <p><b>• Tenkeyless design: </b>  The compact design is easy to travel with</p> <br> 
+                  <p><b>• USB passthrough:</b> The keyboard has a USB passthrough for charging USB devices </p> <br> 
+                  <button class="btn_buy"><a href="paymentpage.html">BUY</a></button>
+                </td>
+              </td>
+              <td>RM 531.00</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><img src="4.2.png" alt="" style="width: 80%;" height="400px"><br><p>RAZER BLACKWIDOW V4 PRO</p></td>
+            <td><p><b>• Keycap material:</b> The keycaps are made of ABS plastic, but they feel comparatively high-quality compared to most ABS keycaps</p> <br> 
+                <p><b>• Blacklight clarity:</b> This keyboard provides outstanding backlight clarity overall.There's a faint red hue visible when set to white backlighting</p></a> <br>
+                <p><b>• Typing Quality: </b> The Razer Green switches are satisfyingly loud and clicky, but there's some inconsistency in how individual switches sound</p> <br> 
+                <p><b>• Single latency:</b> keyboard has exceptionally low single-key latency. It's also remarkably stable due to its effective update rate of 8000Hz </p> <br>
+                <button class="btn_buy"><a href="paymentpage.html">BUY</a></button> 
+              </td>
+            </td>
+            <td>RM 1,097.00</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td><img src="keyboard2-removebg-preview.png" alt="" style="width: 80%;" height="400px"><br><p>HYPERX ALLOY ORIGINS</p></td>
+            <td><p><b>• Grade aluminium value:</b> Aluminium casing keeps the keyboard structurally sound</p> <br> 
+                <p><b>• Ngenuity software:</b> Customize Game mode, take greater control over lighting effect</p></a> <br>
+                <p><b>• RGB backlit keys with radiant effect:</b>Hyperx mechenical switches feature an exposed LED for brighter,more luminous RGB lighting</p> <br> 
+                <p><b>• Portable design with detchable usb-c:</b> small footprint give plenty of room for rapid mouse movements </p> <br> 
+                <button class="btn_buy"><a href="paymentpage.html">BUY</a></button>
+              </td>
+            </td>
+            <td>RM 519.00</td>
+          </tr>
+        
+      </tbody>
+      </table>
+    </tspan>
+    </div>
+
+    
+  <div id="li02" class="modal2">
+    <tspan onclick="document.getElementById('li02').style.display='none'" class="close2" title="Close Modal">times;</span>
+    <table border="6" style="width: 85%;">
+      <thead>
+          <tr style="text-align: center;">
+              <th>No. Item</th>
+              <th class="imageli1" style="width: 50%;"> Image</th>
+              <th id="Image">Detail Item</th>
+              <th>Price Item </th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td>1</td>
+              <td><img src="download__5_-removebg-preview.png" alt="" style="width: 50%;"><BR><P>ATTACK SHARK X6</P></BR></td>
+              <td><p><b>• Pixart PAW3395 Flagship Sensor:</b> TTACK SHARK X6 wireless gaming mouse adopts a pixart 3395 flagship optical sensor,provide 6 level adjustable DPI(800/1600/2400/3200/5000/26000)</p> <br> 
+                  <p><b>• 49g Ultralight & Ergonomic Design:</b> X6’s weight come to an astonishing 49g, which is even lighter than an egg, making it almost the lightest mouse on market. What’s more, the ergonomic body design takes good care of various grip hand shapes</p></a> <br>
+                  <p><b>• RGB Backlight Charging Base&Touch Switch: </b>  TTACK SHARK X6 mouse can be quickly recharged with the cool RGB backlight charging dock, which features an RGB backlight effect that can be customized with tactile controls. With up to 200 hours</p> <br> 
+                  <p><b>• 5Programmable Buttons:</b> Total 5 programmable buttons, setting the mouse DPI, polling rate, LOD, short cut and Macro via driver.Our team is committed to bringing players to next level by providing them the optimal gaming accessories. </p> <br> 
+                  <button class="btn_buy"><a href="paymentpage.html">BUY</a></button>
+                </td>
+              </td>
+              <td>RM 142.00</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><img src="razer1-removebg-preview.png" alt="" style="width: 80%;" height="300px"><br><p>RAZER BASILISK V3 PRO</p></td>
+            <td><p><b>• CONFIGURABLE HYPERSCROLL TILT WHEEL:</b> Choose between tactile cycling and smooth, free-spin scrolling, or auto-switch between them based on the scroll speed</p> <br> 
+                <p><b>• RAZER FOCUS PRO 35K OPTICAL SENSOR GEN-2:</b> best-in-class tracking performance on a wider variety of surfaces including glass, supported by intelligent functions and 1-DPI step</p></a> <br>
+                <p><b>• UP TO 140 HOUR BATTERY ON RAZER HYPERSPEED WIRELESS: </b> Enjoy smooth, lag-free performance for non-stop play or unlock a true 8000 Hz polling rate</p> <br> 
+                <p><b>• 13 CUSTOMIZABLE CONTROLS:</b> Assign an endless combination of commands and macros across 13 easy-access controls, including its acclaimed multi-function trigger to execute essential actions </p> <br>
+                <button class="btn_buy"><a href="paymentpage.html">BUY</a></button> 
+              </td>
+            </td>
+            <td>RM 599.00</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td><img src="download__6_-removebg-preview.png" alt="" style="width: 80%;" height="300px"><br><p>RED DRAGON M914</p></td>
+            <td><p><b>• 9 Programmable Buttons:</b> Gaming mouse wireless allows for button remapping , assignment of complex macro functions, customize lighting</p> <br> 
+                <p><b>• E-Sports Sensor:</b> Incredibly precise, fast and consistent control with PAW3395 Sensor, this gaming mouse features with high precision sensor up to 10000 DPI</p></a> <br>
+                <p><b>• Cool RGB Illumination:</b>Gaming mice With 6 preset RGB backlight effects, it is possible for you to personalize your gaming mouse from a spectrum</p> <br> 
+                <p><b>• Built To Last:</b> Wireless mouse rechargeable has a battery life up to 70 hours (RGB off, 2.4G mode) on a single charge, providing you with non stopping using </p> <br> 
+                <button class="btn_buy"><a href="paymentpage.html">BUY</a></button>
+              </td>
+            </td>
+            <td>RM 194.00</td>
+          </tr>
+        
+      </tbody>
+      </table>
+    </tspan>
+    </div>
+
+    <div id="li03" class="modal2">
+      <tspan onclick="document.getElementById('li03').style.display='none'" class="close2" title="Close Modal">times;</span>
+      <table border="6" style="width: 85%;">
+        <thead>
+            <tr style="text-align: center;">
+                <th>No. Item</th>
+                <th class="imageli1" style="width: 50%;"> Image</th>
+                <th id="Image">Detail Item</th>
+                <th>Price Item </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><img src="headset1-removebg-preview.png" alt="" style="width: 70%;" height="350PX"><BR><P>RAZER BLACKSHARK V2 HEADSET</P></BR></td>
+                <td><p><b>• HYPERCLEAR SUPER WIDEBAND MIC :</b> A dedicated key that disables the Windows key when activatedBy covering a wider frequency range of sound, this next-gen detachable mic captures an incredible amount of voice detail</p> <br> 
+                    <p><b>• MULTI-FUNCTION AUDIO DIAL:</b>  Easily switch between adjusting overall volume or game/chat mix and get the right balance of game audio</p></a> <br>
+                    <p><b>• HYPERSPEED WIRELESS TECHNOLOGY: </b>  With its industry-leading 2.4GHz wireless connection, enjoy high-performance, low-latency competitive play</p> <br> 
+                    
+                    <button class="btn_buy"><a href="paymentpage.html">BUY</a></button>
+                  </td>
+                </td>
+                <td>RM 527.00</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><img src="heaset2-removebg-preview (1).png" alt="" style="width: 60%;" height="350px"><br><p>LOGITECH VIBE 100</p></td>
+              <td><p>• Work. Play. Vibe: Made for the way you work and play, Zone Vibe 100 over ear wireless headphones are professional enough for the office, casual enough for home</p> <br> 
+                  <p>• Noise Canceling Technology: With beamforming technology and digital signal processing (DSP), the noise canceling headphones with microphone capture your voice clearly</p></a> <br>
+                  <p>• Built for future: Choose sustainability with Zone Vibe 100, made with 25% post-consumer recycled plastic (5) for a better future</p> <br> 
+                  
+                  <button class="btn_buy"><a href="paymentpage.html">BUY</a></button> 
+                </td>
+              </td>
+              <td>RM 760.00</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td><img src="Armaggeddon-Cosmic-III-Lite_01-removebg-preview (2).png" alt="" style="width: 80%;" height="300px"><br><p>armaggeddon cosmic iii lite</p></td>
+              <td><p>• Armaggeddon fuze series of headsets which command both 5.1 and 7.1 digital surround sound</p> <br> 
+                  <p>• The fuze series strikes a good balance between the treble, midrange and bass frequencies - this product rich details that contribute to an immersive sound stage</p></a> <br>
+                  <p>• the armaggeddon fuze drivers are capable of pumping out extra bass that you hear and feel to complete your ultimate gaming experience</p> <br> 
+                  
+                  <button class="btn_buy"><a href="paymentpage.html">BUY</a></button>
+                </td>
+              </td>
+              <td>RM 229.00</td>
+            </tr>
+          
+        </tbody>
+        </table>
+      </tspan>
+      </div>
+
+      <div id="li04" class="modal2">
+        <tspan onclick="document.getElementById('li04').style.display='none'" class="close2" title="Close Modal">times;</span>
+        <table border="6" style="width: 85%;">
+          <thead>
+              <tr style="text-align: center;">
+                  <th>No. Item</th>
+                  <th class="imageli1" style="width: 50%;"> Image</th>
+                  <th id="Image">Detail Item</th>
+                  <th>Price Item </th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>1</td>
+                  <td><img src="download__7_-removebg-preview.png" alt="" style="width: 70%;" height="350PX"><BR><P>prism+ x340 pro</P></BR></td>
+                  <td><p>• DP x2 up to 210Hz: Seamlessly link your devices to our two DisplayPort providing up to 210Hz refresh rate and two HDMI ports up to 190Hz,</p> <br> 
+                      <p>• True to Life Colors: Experience vibrant and true-to-life colors with a high quality IPS (In-Plane Switching) panel rated at 100% sRGB color gamut performance</p></a> <br>
+                      <p>• Enhanced Gaming Experience: Elevate your gaming prowess with a lightning-fast 1ms BR (Blur Reduction) and an ultra-smooth 210Hz refresh rate</p> <br> 
+                      
+                      <button class="btn_buy"><a href="paymentpage.html">BUY</a></button>
+                    </td>
+                  </td>
+                  <td>RM 1,549.00</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td><img src="monitor-removebg-preview.png" alt="" style="width: 60%;" height="300px"><br><p>ASUS tuf gaming 32 inch</p></td>
+                <td><p>• 31.5-inch WQHD (2560x1440) 1500R gaming monitor with ultrafast 165Hz refresh rate (supports 144Hz)</p> <br> 
+                    <p>• ASUS Extreme Low Motion Blur (ELMB ) technology enables a 1ms response time (MPRT) together with Adaptive-sync, eliminating ghosting</p></a> <br>
+                    <p>• FreeSync Premium technology supported through DisplayPort and HDMI ports providing variable refresh rates for low latency, stuttering-free and tearing-free while gaming</p> <br> 
+                    
+                    <button class="btn_buy"><a href="paymentpage.html">BUY</a></button> 
+                  </td>
+                </td>
+                <td>RM 1,876.00</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td><img src="download__8_-removebg-preview.png" alt="" style="width: 80%;" height="300px"><br><p>ACER PREDATOR X32</p></td>
+                <td><p>• OLED Makes With a display of these mammoth-like proportions, everything must look good. The 4K UHD OLED display with true 10Bit is obligated to offer stunning contrast</p> <br> 
+                    <p>• Brilliant Colors: Boasting a DCI-P3 99% color gamut and VESA DisplayHDR True Black 400 (Min. 0.0005 nits), vibrant colors leap from the screen</p></a> <br>
+                    <p>• Dynamic Frequency & Resolution (DFR): Different content has different refresh rate and resolution requirements. If you are playing an FPS</p> <br> 
+                    
+                    <button class="btn_buy"><a href="paymentpage.html">BUY</a></button>
+                  </td>
+                </td>
+                <td>RM 5,695.00</td>
+              </tr>
+            
+          </tbody>
+          </table>
+        </tspan>
+        </div>
+
+    
+
+  </html>
